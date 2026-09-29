@@ -1,0 +1,5 @@
+id_movimentacao;id_produto;tipo;quantidade;data
+1;1;saída;20;02/09/2026
+2;2;entrada;30;03/09/2026
+3;3;saída;40;04/09/2026
+4;4;entrada;50;05/09/2026

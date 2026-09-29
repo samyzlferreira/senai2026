@@ -1,0 +1,5 @@
+id_disciplina ;nome;carga_horaria;id_professor
+101;matematica;80;501
+102;portugues ;60;502
+103;informatica;80;503
+104;historia;60;504

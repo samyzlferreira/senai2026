@@ -1,0 +1,5 @@
+id_estoque;id_produto;quantidade;quantidade_minima;localizacao
+1;1;50;20;arara a
+2;2;60;30;prateleira a
+3;3;70;40;arara b
+4;4;80;50;prateleira b

@@ -1,0 +1,5 @@
+id;nome;descricao;preco;marca;id_categoria;id_fornecedor
+1;camiseta básica;camiseta algodão;100;Coca Cola;1;1
+2;calça jeans;calça jeans escuro;293;carrefour;2;2
+3;saia de couro;saia de couro marrom;302;natura;3;3
+4;moletom c/ capuz;moletom de algodão ;1500;ambev;4;4

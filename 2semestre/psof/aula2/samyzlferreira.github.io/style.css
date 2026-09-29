@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Monaco, monospace;
+    color: #444;
+    background-color: #ffffff;
+}
+
+
+header {
+    min-height: 700px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 192, 218, 0.20)
+        ),
+        url('wings GIF.gif');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+nav {
+    width: 90%;
+    max-width: 900px;
+
+    margin-top: 25px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    padding: 16px 25px;
+
+    border-radius: 50px;
+
+    border: 2px solid #f6c1d7;
+
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.18);
+
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #d95b91;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f09ac1;
+}
+
+
+.nome {
+    margin-top: 190px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    padding: 40px 60px;
+
+    border-radius: 30px;
+
+    border: 2px solid #f6c1d7;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nome h1 {
+    color: #d95b91;
+
+    font-size: 45px;
+
+    font-weight: bold;
+}
+
+.nome p {
+    color: #666;
+
+    font-size: 18px;
+
+    margin-top: 12px;
+}
+
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.social {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #fff0f7;
+
+    color: #d95b91;
+
+    border: 2px solid #f5bfd5;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    transition: 0.3s ease;
+}
+
+.social:hover {
+    background-color: #f6a6c9;
+
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+
+section {
+    width: 90%;
+    max-width: 1050px;
+
+    margin: 50px auto;
+
+    padding: 45px;
+
+    background-color: white;
+
+    border: 2px solid #f7c9dc;
+
+    border-radius: 30px;
+
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.12);
+}
+
+.container {
+    width: 100%;
+}
+
+h2 {
+    color: #d95b91;
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #f3a3c7;
+
+    margin: 12px auto 0;
+
+    border-radius: 10px;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+
+    text-align: left;
+}
+
+.sobre-mim img {
+    flex-shrink: 0;
+}
+
+.sobre-mim div {
+    flex: 1;
+}
+
+#sobre h2 {
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 230px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #f6b4d2;
+
+    box-shadow: 6px 6px 0 #ffe1ed;
+
+    transition: 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.03);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff7fa;
+
+    border: 2px solid #f5c5d9;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    width: 30%;
+    min-width: 250px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    background-color: white;
+
+    border-color: #efa0c2;
+
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+}
+
+.card h3 {
+    color: #d95b91;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+
+
+.hobbies {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.hobby {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    background-color: #fff7fa;
+
+    border: 2px solid #f5c5d9;
+
+    border-radius: 25px;
+
+    transition: 0.3s ease;
+}
+
+.hobby:hover {
+    background-color: #ffeef5;
+
+    transform: translateY(-4px);
+}
+
+.hobby i {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #f9c2d9;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+
+    font-style: normal;
+}
+
+.hobby h3 {
+    color: #d95b91;
+
+    margin-bottom: 6px;
+}
+
+.hobby p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+form {
+    display: grid;
+
+    gap: 18px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #fffafa;
+
+    border: 2px solid #f2bfd4;
+
+    border-radius: 20px;
+
+    font-family: Monaco, monospace;
+
+    color: #555;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #df7fa9;
+
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+button {
+    padding: 14px;
+
+    background-color: #e98bb3;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-family: Monaco, monospace;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #d96b9b;
+
+    transform: translateY(-2px);
+}
+
+
+
+
+footer {
+    background-color: #fff1f6;
+
+    color: #d95b91;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 60px;
+
+    border-top: 2px solid #f6c1d7;
+}
+
+
+
+@media (max-width: 800px) {
+
+    nav {
+        width: 95%;
+    }
+
+    nav ul li {
+        margin: 8px 10px;
+    }
+
+    .nome {
+        margin-top: 150px;
+
+        padding: 30px;
+    }
+
+    .nome h1 {
+        font-size: 34px;
+    }
+
+    section {
+        width: 94%;
+
+        padding: 30px 20px;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .sobre-mim {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sobre-mim div {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+.forma{
+    display:flex;
+    justify-content: space-between;
+}
+.gif{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-top:-160px;
+    margin-left: -20px;
+}
+.gif2{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-top:20px;
+    margin-left: 200px;
+}

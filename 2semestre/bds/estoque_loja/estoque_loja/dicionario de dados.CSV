@@ -1,0 +1,28 @@
+entidade;atributo;tipo;tamanho;descrição
+categoria;id ;INT;11;identifica a categoria
+categoria;nome ;VARCHAR;100;nome da categoria
+categoria;descrição;VARCHAR;200;descreve a categoria
+fornecedor;id ;INT;11;identifica o fornecedor
+fornecedor;razao_social;VARCHAR;150;nome oficial da empresa
+fornecedor;nome_fantasia;VARCHAR;100;nome usado pela empresa
+fornecedor;cnpj;VARCHAR;14;cnpj do fornecedor
+fornecedor;telefone;VARCHAR;11;telefone do fornecedor 
+fornecedor;email;VARCHAR;100;email do fornecedor 
+fornecedor;endereco;VARCHAR;200;endereco do fornecedor 
+produto;id ;INT;11; identifica o produto
+produto;nome ;VARCHAR;100;nome do produto
+produto;descrição;VARCHAR;200;descrevre o produto
+produto;preco;VARCHAR;100;preço do produto
+produto;marca;VARCHAR;100;marca do produto
+produto;id_categoria;INT;11;identifica a categoria do produto
+produto;id_fornecedor;INT;11;identifica o fornecedor do produto
+estoque;id_estoque;INT;11;identifica o estoque
+estoque;id_produto;INT;11;identifica o estoque do produto
+estoque;quantidade;VARCHAR;100;identifica a quantidade do produto
+estoque;quantidade_minima;VARCHAR;100;identifica a quantidade minima do produto
+estoque;localizacao;VARCHAR;100;identifica a localizacao do produto
+movimentaçao de estoque;id_movimentaçao;INT;11;identifica a movimentaçao do estoque
+movimentaçao de estoque;id_produto;INT;11;identifica a movimentaçao do produto
+movimentaçao de estoque;tipo;VARCHAR;100;identifica se é entrada ou saida
+movimentaçao de estoque;quantidade;VARCHAR;100;identifica a quantidade
+movimentaçao de estoque;data;DATE;;identifica a data da movimentaçao
